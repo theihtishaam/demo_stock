@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Predictions Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Predictions Result</h1>
+      <div class="result">
+        <p>The predicted price for the next day is: {{ prediction }}</p>
+        <p>The actual price for the next day is: {{ actual }}</p>
+      </div>
+      <div class="btn-container">
+        <a href="{{ url_for('index') }}" class="btn">Go Back</a>
+      </div>
+    </div>
+  </body>
+</html>
